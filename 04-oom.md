@@ -14,6 +14,12 @@
 
 Процесс упал в кол-во памяти потому что часть лимита занято python, библиотеками и структурами утилиты.
 
+
 <img width="503" height="37" alt="image" src="https://github.com/user-attachments/assets/71361f51-1e0e-4b1c-9ba6-c822e5fd1ca4" />
 
+Данный процесса остановил собственный лимит, а не ядро. Поэтому записей и нет.
+
 <img width="406" height="67" alt="image" src="https://github.com/user-attachments/assets/f535d92a-4567-4edf-a63b-4aa21164951e" />
+
+Чем выше значение oom_score - тем вероятнее убиство
+oom_score_adj - отвечает за ручную поправку, если ниже то не убивать никогда, если больше - то убить первым
